@@ -15,8 +15,6 @@ exports.handler = async (event) => {
       statusCode: 200,
       body: JSON.stringify({ paymentIntent })
     }
-    console.log(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
-    console.log(process.env.REACT_APP_SECRET_KEY);
   } catch (error) {
     console.log({ error });
     
